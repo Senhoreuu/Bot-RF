@@ -11,7 +11,7 @@ module.exports = {
                 .setRequired(true))
         .addUserOption(option =>
             option
-                .setName('target')
+                .setName('recordista')
                 .setDescription('Recordista')
                 .setRequired(true))
         .addStringOption(option =>
