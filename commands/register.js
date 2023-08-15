@@ -50,6 +50,7 @@ module.exports = {
                 .setFooter({ text: `Recorde Registrado por ${user.globalName}`, iconURL: 'https://cdn.ironhotel.org/static_iron/c_images/album1584/RF01.gif' });
 
             await channel.send({ embeds: [embed] });
+            
             await interaction.reply({ content: 'Recorde Registrado!', ephemeral: true });
         }
         catch (e) {
