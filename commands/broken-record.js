@@ -42,16 +42,16 @@ module.exports = {
         try {
             const embed = new EmbedBuilder()
                 .setColor(15705895)
-                .setTitle('**NOVO RECORDE REGISTRADO**')
+                .setTitle('**RECORDE QUEBRADO!**')
                 .setThumbnail('https://cdn.discordapp.com/attachments/1115672752498675762/1115672849915588708/RECORDES_DE_FERRO_PATO_SEM_FUNDO.png')
-                .setDescription(`Um novo recorde foi registrado na Recordes de Ferro!\n\n> 🏆 **Recordista:** ${userMention(target.id)}\n> 💎 **Raro:** ${rare}\n> 📌 **Quantidade:** ${quantity}\n\n*Acha que é capaz de quebrar este recorde?*`)
+                .setDescription(`Um recorde foi quebrado na Recordes de Ferro!\n\n> 🏆 **Recordista:** ${userMention(target.id)}\n> 💎 **Raro:** ${rare}\n> 📌 **Quantidade:** ${quantity}\n\n*Acha que é capaz de quebrar este recorde?*`)
                 .setImage(img)
                 .setTimestamp()
-                .setFooter({ text: `Recorde Registrado por ${user.globalName}`, iconURL: 'https://cdn.ironhotel.org/static_iron/c_images/album1584/RF01.gif' });
+                .setFooter({ text: `Recorde registrado por ${user.globalName}`, iconURL: 'https://cdn.ironhotel.org/static_iron/c_images/album1584/RF01.gif' });
 
             await channel.send({ embeds: [embed] });
-            
-            await interaction.reply({ content: 'Recorde registrado!', ephemeral: true });
+
+            await interaction.reply({ content: 'Recorde Registrado!', ephemeral: true });
         }
         catch (e) {
             console.error(`Comando negado: ${e}`);
